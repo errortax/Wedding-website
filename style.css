@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:wght@200&family=Playfair+Display:ital,wght@0,400;1,600&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Satisfy', cursive;
+box-sizing: border-box;
+}
+
+:root{
+    --green: #567C6D;
+}
+/* body{
+ margin: 5px 20px;
+} */
+
+h1,
+h2{
+    color: var(--green);
+}
+a{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    color: var(--green);
+}
+
+a.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    
+}
+
+
+
+a:hover,
+a.btn:hover,
+.form-div a.btn:hover{
+    color:hsl(41, 87%, 72%);
+   cursor: pointer;
+}
+
+a.btn:hover,
+.form-div a.btn:hover{
+    color:hsl(41, 87%, 72%);
+    background-color: #567C6D;
+    opacity: 0.75;
+}
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+  padding: 20px;
+}
+
+
+.welcome{
+    background: url('image/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    /* padding: 170px 0 110px 0; */
+    line-height: 55px;
+}
+
+.outer{
+   margin-bottom: 30px;
+  
+}
+
+img{
+    max-width: 100%;
+}
+
+.content{
+    text-align: center;
+    background-color: rgba(119, 119, 119, 0.328);
+    padding: 170px 0 110px 0;
+ 
+}
+.content h1{
+    font-size: 5rem;
+    color: #567C6D;
+}
+
+/* .content p{
+    color: #3d554c;
+    font-size: 1.2rem;
+} */
+
+.upper{
+  margin-bottom: 30px;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    color: #3d554c;
+    font-size: 1.2rem;
+  
+}
+
+.content h1,
+.content p{
+    font-family: 'Merriweather', 'serif';
+ 
+   
+}
+
+a.btn{
+    margin-top: 60px;
+    padding: 10px 20px;
+    border: 2px double white;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+
+/* about section */
+
+section{
+    max-width: 780px;
+    margin: 90px auto;
+    column-gap: 90px;
+
+}
+.extra{ 
+    width: 100%;
+}
+
+#about-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+#about-us p{
+ font: 1rem sans-serif;
+ letter-spacing: 1px;
+ line-height: 1.5rem;
+}
+
+#about-us h2,
+#about-us span,
+#services h2,
+#services span,
+#work h2,
+#work span,
+#booking h2,
+#booking span{
+    font-size: 2.375rem;
+    font-family: 'Playfair Display';
+    margin-bottom: 60px;
+    /* left: -30px; */
+   
+}
+
+
+#about-us span,
+#services span,
+#work h2 span,
+#booking span{
+ color: #567C6D;
+ opacity: 0.3;
+ font-size: 6rem;
+ position: absolute;
+ margin-top: -2.5rem;
+ margin-left: -2.3rem;
+}
+
+#services h3{
+    text-align: center;
+}
+
+.service-container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: mandatory;
+    padding-bottom: 50px;
+}
+
+a.services{
+    display: inline-block;
+    width: 300px;
+    scroll-snap-align: start;
+}
+
+a.services:nth-child(odd){
+    position: relative;
+    top: 40px;
+}
+
+/* work section */
+
+ul li{
+    list-style: none;
+    line-height: 20px;  
+}
+
+ul li p{
+    padding: 20px 0 40px;
+    font-family: 'Merriweather', serif;
+    color: #3d554c;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+ul li h3,
+.work ul li h3{
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    position: relative;
+    margin-bottom: 60px;
+   
+ 
+}
+
+.extra{
+    height: 100%;
+    width: auto;
+}
+#work h3{
+    color: var(--green);
+}
+
+
+.con2 img,
+.con2 span{
+    order: -1;
+}
+
+.container ul li span{
+    clear: both;
+    float: left;
+    font-size: 10rem;
+    line-height: 1rem;
+    display: inline-block;
+    padding: 0 30px 60px 0;
+    font-weight: 300;
+    opacity: .3;
+    font-family: 'Roboto Slab', serif;
+    color: var(--green);
+}
+
+.container ul li h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* booking */
+
+.div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+input[type="text"]{
+    display: block;
+    width: 100%;
+    /* font-size: 22px; */
+    padding: 14px 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+label{
+    font-size: 28px;
+    padding: 10px 5px 0 0;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    background-color: white;
+    color: var(--green);
+}
+
+label.terms {
+    padding: 0px;
+    inset: 0;
+    font: 20px 'Roboto Slab', serif;
+}
+label#terms{
+    padding-top: 20px;
+}
+
+input#terms {
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.form-div a.btn {
+    color: var(--green);
+    margin: 10px 20px;
+    border: 2px double var(--green);
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+   
+}
+
+/* .side-image {
+    display: flex;
+    align-items: center;
+} */
+
+footer{
+   padding-bottom: 20px;
+    margin: 0 20px 20px 20px;
+    position: relative;
+    border: 2px double var(--green);
+    color: var(--green);
+}
+
+footer a.logo{
+    position: relative;
+    left: 450px;
+    top: -30px;
+    background-color: white;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.inner-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 0px;
+    font-family: 'Roboto Slab', serif;
+}
