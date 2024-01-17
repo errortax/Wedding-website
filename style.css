@@ -291,6 +291,9 @@ input#terms {
     margin-bottom: 30px;
 }
 
+div.container:nth-child(odd) ul{
+    order:5;
+}
 @media screen and (max-width:700px){
  div.div{
  display:grid;
